@@ -1,0 +1,12 @@
+.btn {
+  width: fit-content;
+  height: 30px;
+  border-radius: 2px;
+  margin: 0 auto 15px 10px;
+  background-color: #3e77f3;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #3158ad;
+}
