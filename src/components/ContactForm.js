@@ -35,7 +35,6 @@ export class ContactForm extends Component {
 
   render() {
     const { name, number } = this.state;
-    const { id } = this.props;
     return (
       <>
         <h2>Phonebook</h2>
@@ -48,7 +47,6 @@ export class ContactForm extends Component {
             type="text"
             placeholder="Enter name"
             value={name}
-            id={id}
             required
           />
           <InputFn
@@ -58,7 +56,6 @@ export class ContactForm extends Component {
             type="tel"
             placeholder="Enter number"
             value={number}
-            id={id}
             required
           />
           <br />

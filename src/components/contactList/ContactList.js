@@ -1,14 +1,14 @@
 import React from 'react';
-import { ListItem } from './ListItem';
 import { Filter } from '../Filter';
+import { ListItem } from './ListItem';
 import css from './ContactList.module.css';
 
 export const ContactList = ({
-  length,
   contacts,
   onDeleteContact,
-  onChangeFilter,
+  length,
   value,
+  onChangeFilter,
 }) => (
   <>
     <h2>Contacts</h2>

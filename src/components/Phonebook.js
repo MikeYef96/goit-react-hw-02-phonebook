@@ -4,8 +4,6 @@ import { ContactForm } from './ContactForm';
 import { ContactList } from './contactList/ContactList';
 import css from './Phonebook.module.css';
 
-const contactId = uuidv4();
-
 export class Phonebook extends Component {
   state = {
     contacts: [],
@@ -59,7 +57,7 @@ export class Phonebook extends Component {
     return (
       <React.Fragment>
         <div className={css.container}>
-          <ContactForm id={contactId} onAddContact={this.addContact} />
+          <ContactForm onAddContact={this.addContact} />
           <ContactList
             length={contacts.length}
             contacts={this.filterForContacts()}
